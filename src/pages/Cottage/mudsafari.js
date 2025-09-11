@@ -6,11 +6,13 @@ import img1 from './images/bestmudsafari.webp';
 
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const MuddafariCottage = () => {
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
 
             <div className="Muddafari-container">

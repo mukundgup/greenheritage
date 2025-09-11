@@ -5,11 +5,13 @@ import img1 from './images/rowcottage.webp';
 
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const rowCottage = () => {
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
 
             <div className="row-container">

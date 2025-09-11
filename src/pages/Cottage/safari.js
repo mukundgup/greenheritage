@@ -3,11 +3,13 @@ import './Safari.css'; // make sure this path is correct
 import Navigation from '../../components/Nav';
 import Footer from '../../components/Footer';
 import img1 from './images/bestsafari.webp'
+import ScrollToTop from '../../components/ScrollToTop';
 
 const Safari = () => {
     
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
 
             <div className="safari-page">

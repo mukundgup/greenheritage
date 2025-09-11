@@ -6,11 +6,13 @@ import img1 from './images/mudmushroom.webp';
 
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const FloatingCottage = () => {
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
 
             <div className="Floating-container">

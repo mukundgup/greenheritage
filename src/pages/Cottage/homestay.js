@@ -3,10 +3,12 @@ import './homestay.css'
 import img1 from './images/Homestay.jpg';
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 const HomestayCottage = () => {
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
             <div className="Homestay-container">
                 <div className="Homestay-image-grid">

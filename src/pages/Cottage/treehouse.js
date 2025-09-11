@@ -3,11 +3,13 @@ import './treehouse.css'
 import img1 from './images/Treehouse.jpg';
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const TreehouseCottage = () => {
   return (
     <>
+    <ScrollToTop/>
       <Navigation />
 
       <div className="Treehouse-container">

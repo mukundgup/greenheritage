@@ -5,11 +5,13 @@ import img1 from './images/mudmushroom.webp';
 
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const MudmushrromCottage = () => {
     return (
         <>
+        <ScrollToTop/>
             <Navigation />
 
             <div className="Mudmushrrom-container">

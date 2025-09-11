@@ -3,11 +3,13 @@ import './duplex.css'
 import img1 from './images/mushroomcottage.webp';
 import Footer from '../../components/Footer';
 import Navigation from '../../components/Nav';
+import ScrollToTop from '../../components/ScrollToTop';
 
 
 const duplexCottage = () => {
   return (
     <>
+    <ScrollToTop/>
     <Navigation/>
 
     <div className="duplex-container">
