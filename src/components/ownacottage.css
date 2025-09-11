@@ -1,0 +1,155 @@
+/* Container */
+.Owncottage-page {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section with fixed background */
+.Owncottage-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  background-image: url('./imagesheader/safricottage.jpg') ; /* your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* key for keeping image fixed */
+  
+}
+
+.Owncottage-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay for text contrast */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Owncottage-title {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+/* Content Section */
+.Owncottage-content {
+  padding: 3rem 10%;
+  background: white;
+}
+
+.Owncottage-content h2 {
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 1.1;
+  font-family: var(--e-global-typography-secondary-font-family), Sans-serif;
+}
+
+.Owncottage-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(143, 146, 146);
+  text-align: justify;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .Owncottage-title {
+    font-size: 2rem;
+  }
+  .Owncottage-content {
+    padding: 2rem 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Owncottage-title {
+    font-size: 1.5rem;
+  }
+}
+
+
+.Owncottage-benefits-section {
+  display: flex;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-wrap: wrap; /* so it stacks on mobile */
+}
+
+.benefits-card,
+.income-calculator-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Benefits List */
+.benefits-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.benefits-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits-card li {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+}
+
+/* Calculator Styles */
+.income-calculator-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.income-calculator-card label {
+  display: block;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.income-calculator-card select,
+.income-calculator-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.income-calculator-card .note {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .Owncottage-benefits-section {
+    flex-direction: column;
+  }
+  
+  .Owncottage-title {
+    font-size: 1.5rem;
+  }
+  
+  .Owncottage-content h2 {
+    font-size: 1.5rem;
+  }
+}

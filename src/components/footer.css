@@ -1,0 +1,82 @@
+.Saying-footer {
+    background-color: #1c1e27;
+    color: white;
+    padding: 40px 80px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.footerlogo img {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.Saying-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Saying-column {
+    flex: 1;
+    min-width: 220px;
+}
+
+.Saying-logo-column {
+    max-width: 300px;
+}
+
+.Saying-logo {
+    width: 150px;
+    margin-bottom: 16px;
+}
+
+.Saying-description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.Saying-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+.Saying-column ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.Saying-column li a {
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.Saying-column ul li a:hover {
+    background-color: green;
+}
+
+.Saying-column p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.Saying-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 14px;
+}
