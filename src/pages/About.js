@@ -4,9 +4,11 @@ import Navigation from '../components/Nav';
 import Footer from '../components/Footer';
 import './About.css';
 import twin from "./imges/twin.jpg"
+import ScrollToTop from '../components/ScrollToTop';
 const About = () => {
   return (
     <>
+    <ScrollToTop/>
     <Navigation/>
     <div className="about-wrapper">
       <h1 className="about-heading">About Us</h1>

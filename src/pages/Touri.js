@@ -4,9 +4,11 @@ import Navigation from '../components/Nav';
 import Footer from '../components/Footer';
 import './tourism.css';
 import twin from "./imges/tourism.jpg"
+import ScrollToTop from '../components/ScrollToTop';
 const Tourism = () => {
   return (
     <>
+    <ScrollToTop/>
     <Navigation/>
     <div className="about-wrapper">
       <h1 className="about-heading">Unlocking Adventure</h1>

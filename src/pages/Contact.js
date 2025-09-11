@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./contact.css";
 import Navigation from "../components/Nav";
 import Footer from "../components/Footer";
+import ScrollToTop from "../components/ScrollToTop";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -39,6 +40,7 @@ const Contact = () => {
 
   return (
     <>
+    <ScrollToTop/>
     <Navigation/>
     <div className="contact-container">
       <h1 className="contact-title">Contact Us</h1>
