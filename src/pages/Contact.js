@@ -1,9 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import Navigation from "../components/Nav";
 import Footer from "../components/Footer";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    phone: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+ 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Save form data to localStorage
+    localStorage.setItem('contactFormData', JSON.stringify(formData));
+    // Clear form after submission
+    setFormData({
+      firstName: '',
+      lastName: '',
+      phone: '',
+      email: '',
+      message: ''
+    });
+     console.log(formData);
+    alert('Form submitted successfully!');
+  };
+
   return (
     <>
     <Navigation/>
@@ -12,14 +45,49 @@ const Contact = () => {
       <h3 className="contact-subtitle">Get In Touch With Us</h3>
 
       {/* Contact Form */}
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={handleSubmit}>
         <div className="row">
-          <input type="text" placeholder="First Name" required />
-          <input type="text" placeholder="Last Name" required />
+          <input 
+            type="text" 
+            name="firstName"
+            value={formData.firstName}
+            onChange={handleChange}
+            placeholder="First Name" 
+            required 
+          />
+          <input 
+            type="text" 
+            name="lastName"
+            value={formData.lastName}
+            onChange={handleChange}
+            placeholder="Last Name" 
+            required 
+          />
         </div>
-        <input type="tel" placeholder="Phone Number" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Message" rows="5" required></textarea>
+        <input 
+          type="tel" 
+          name="phone"
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder="Phone Number" 
+          required 
+        />
+        <input 
+          type="email" 
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+          placeholder="Email" 
+          required 
+        />
+        <textarea 
+          name="message"
+          value={formData.message}
+          onChange={handleChange}
+          placeholder="Message" 
+          rows="5" 
+          required
+        ></textarea>
 
         <button type="submit" className="send-btn">Send</button>
       </form>

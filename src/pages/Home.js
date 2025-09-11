@@ -6,7 +6,7 @@ import './Home.css';
 import mission from './imges/mission.jpg';
 import vision from './imges/vision.jpg';
 import value from './imges/value.jpg';
-import housecard1 from './imges/houseslider.jpg'
+// import housecard1 from './imges/houseslider.jpg'
 import fasari from './imges/safaricottage.webp'
 import singlexcorteg from './imges/singlexcorteg.jpeg'
 import twin from './imges/twin.jpg'
@@ -31,16 +31,16 @@ import 'swiper/css/scrollbar';
 
 const Home = () => {
   const cottageTypes = [
-    { image: housecard1, name: "Luxury Cottage", path: "/cottages/luxury" },
+    // { image: housecard1, name: "Luxury Cottage", path: "/cottages/luxury" },
     { image: fasari, name: "Safari Cottage", path: "/cottages/safari" },
-    { image: singlexcorteg, name: "Single Executive", path: "/cottages/single-executive" },
-    { image: twin, name: "Twin Cottage", path: "/cottages/twin" },
-    { image: treehouse, name: "Tree House", path: "/cottages/tree-house" },
-    { image: homecotteg, name: "Home Cottage", path: "/cottages/home" },
-    { image: mudmushroom, name: "Mud Mushroom", path: "/cottages/mud-mushroom" },
-    { image: safaricottage, name: "Safari Lodge", path: "/cottages/safari-lodge" },
+    { image: singlexcorteg, name: "Singlex Cottages", path: "/cottages/singlex" },
+    { image: twin, name: "Twin Duplex Cottages", path: "/cottages/duplex" },
+    { image: treehouse, name: "Tree House Cottages", path: "/cottages/treehouse" },
+    { image: homecotteg, name: "Home stay Cottage", path: "/cottages/homestay" },
+    { image: mudmushroom, name: "Mud Mushroom Cottages", path: "/cottages/mudmushroom" },
+    { image: safaricottage, name: " Mud Safari Cottages", path: "/cottages/mudsafari" },
     { image: rowcottage, name: "Row Cottage", path: "/cottages/row" },
-    { image: mushromms, name: "Mushroom Suite", path: "/cottages/mushroom" }
+    { image: mushromms, name: "Mushroom Suite Cottages", path: "/cottages/mushroomcottage" }
   ];
 
   return (
