@@ -282,3 +282,26 @@
     font-weight: bold;
   }
 }
+
+/* Existing styles ... */
+
+/* Force black text color in mobile view */
+@media (max-width: 768px) {
+  .nav-link,
+  .dropdown-item,
+  .own-btn {
+    color: black !important;
+  }
+
+  /* If dropdown toggle is a <button> */
+  .dropdown-toggle {
+    color: black !important;
+  }
+
+  /* Optional: ensure visited/active/hover states also black */
+  .nav-link:visited,
+  .nav-link:active,
+  .nav-link:hover {
+    color: black !important;
+  }
+}
