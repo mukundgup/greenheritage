@@ -21,6 +21,12 @@ import MrDanishKhan from './imges/MrDanishKhan.jpeg'
 import RMBondreji from './imges/R.M.Bondreji.webp'
 import ashokshrivastava from "./imges/AshokShrivastava.webp"
 import mohadtajul from "./imges/MohdTajul.jpeg"
+//annimation
+import AYURVEDICSPA from './imges/pexels.jpg'
+import minizoo from './imges/minizoo.jpg'
+import fishingpond from './imges/mission.jpg'
+import flowergardens from './imges/vision.jpg'
+import waterparks from './imges/waterpark.jpg'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
@@ -42,7 +48,14 @@ const Home = () => {
     { image: rowcottage, name: "Row Cottage", path: "/cottages/row" },
     { image: mushromms, name: "Mushroom Suite Cottages", path: "/cottages/mushroomcottage" }
   ];
-
+  const annimation =[
+    { image: minizoo, name: "Mini Zoo", path:"/minizoo" },
+    { image: AYURVEDICSPA, name: "AYURVEDIC SPA", path:"/minizoo" },
+    { image: fishingpond, name: "FISHING POND", path:"/minizoo" },
+    { image:flowergardens , name: "FLOWER GARDENS", path:"/minizoo" },
+    { image:waterparks , name: "WATER PARKS", path:"/minizoo" },
+  ];
+  
   return (
     <>
       <Header />
@@ -270,7 +283,7 @@ const Home = () => {
             }}
             style={{ padding: "60px 50px", backgroundColor: "#fff" }}
           >
-            {cottageTypes.map((amenity, index) => (
+            {annimation.map((amenity, index) => (
               <SwiperSlide key={index}>
                 <div className="BestAmenities-image-container">
                   <img src={amenity.image} alt={amenity.name} className="BestAmenities-responsive-img" />
